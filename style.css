@@ -64,6 +64,34 @@ section {
     color: #006b3c;
 }
 
+.link__hover-effect {
+    position: relative;
+}
+
+.link__hover-effect:after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    height: 3px;
+    width: 0;
+    right: 0;
+    background-color: black;
+    transition: 300ms ease;
+}
+
+.link__hover-effect--white:after {
+    background-color: white;
+}
+
+.link__hover-effect--black:after {
+    background-color: #242424;
+}
+
+.link__hover-effect:hover:after {
+    left: 0;
+    width: 100%;
+}
+
 /* 
 
 LANDING PAGE 
@@ -213,6 +241,11 @@ PROJECTS
 
 .project__img {
     width: 100%;
+    transition: all 600ms;
+}
+
+.project:hover .project__img {
+
 }
 
 .project__wrapper {
@@ -230,6 +263,7 @@ PROJECTS
 .project__wrapper:hover .project__img {
     transform: scale(1.07);
     filter: blur(5px);
+    
 }
 
 .project__description {
