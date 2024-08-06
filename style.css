@@ -279,14 +279,13 @@ MODAL
     display: flex;
 }
 
-
-
 .modal__half {
     width: 50%;
     padding: 40px 72px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
 }
 
 .modal__about {
@@ -367,9 +366,35 @@ MODAL
     background-color: transparent;
 }
 
-form__submit:active {
+.form__submit:active {
     border-color: #006b3c;
     color: #006b3c;
+}
+
+.modal__overlay--loading {
+    background-color: #242424;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+}
+
+.fa-spinner {
+    animation: spinner 750ms infinite;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 /* 
