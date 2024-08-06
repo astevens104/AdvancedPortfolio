@@ -103,7 +103,25 @@
                     </figure>
                 </div>
             </div>
-            <div class="modal__half modal__contact">Let's talk!</div>
+            <div class="modal__half modal__contact">
+                <h3 class="modal__title modal__title--contact">Let's Talk!</h3>
+                <h4 class="modal__sub-title modal__sub-title--contact">I am currently open to new opportunities.</h3>
+                <form id="contact__form" action="">
+                    <div class="form__item">
+                        <label class="form__item--label">Name</label>
+                        <input class="input" name="user_name" type="text" required></input>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label">E-mail</label>
+                        <input class="input" name="user_email" type="email" required></input>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label">Message</label>
+                        <textarea class="input" name="message" type="text" required></textarea>
+                    </div>
+                    <button id="contact__submit" class="form__submit">Give me a shout!</button>
+                </form>
+            </div>
         </div>
     </section>
     <section id="projects">
